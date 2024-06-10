@@ -45,6 +45,7 @@ body {
   }
 
   .product-list li {
+    cursor: pointer;
     margin-bottom: 5px;
   }
 
