@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .product-list {
+    margin-bottom: 20px;
+  }
+
+  .product-list ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .product-list li {
+    margin-bottom: 5px;
+  }
+
+  .reviews {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+
+  .delete-review {
+    color: red;
+    cursor: pointer;
+  }
