@@ -57,8 +57,10 @@ function renderProductList() {
 // Функция для рендеринга отзывов по продукту
 function renderReviews(productName) {
   reviewsContainer.innerHTML = '';
-  const productReviews = reviews[productName];
-  if (productReviews.length > 0) {
+  
+  const productReviews = Array (reviews[productName]);
+
+  if (productReviews.length >0) {
     const ul = document.createElement('ul');
     productReviews.forEach((review, index) => {
       const li = document.createElement('li');
@@ -80,8 +82,9 @@ function renderReviews(productName) {
 
 // Функция для удаления отзыва
 function deleteReview(productName, reviewIndex) {
-  reviews[productName].splice(reviewIndex, 1);
+ reviews[productName].splice(reviewIndex, 1);
   if (reviews[productName].length === 0) {
+    
     delete reviews[productName]; // Удаляем продукт, если нет отзывов
   }
   localStorage.setItem('reviews', JSON.stringify(reviews));
